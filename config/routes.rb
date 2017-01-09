@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resources :days, only: [:create] do
     resource :thought, only: [:show]
   end
+  # root => 'welcome#index'
 end
